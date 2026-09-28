@@ -1,706 +1,721 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Clinton Tora | Brand Designer & Remote Creator</title>
+  <title>Clinton Mokua | AI Data & Research Specialist</title>
 
-<meta name="description" content="Clinton Tora portfolio: brand design, freelance writing and remote creator work.">
+  <meta
+    name="description"
+    content="Clinton Mokua is an AI Data & Research Specialist specializing in AI data annotation, research, AI response evaluation, content review, data quality, and digital information analysis."
+  >
 
-<style>
-:root{
-  --bg:#08080c;
-  --card:#12121a;
-  --text:#f7f7fb;
-  --muted:#a8a8b8;
-  --line:#292936;
-  --a:#8b5cf6;
-  --b:#ec4899
-}
+  <meta name="author" content="Clinton Mokua">
 
-*{box-sizing:border-box}
-
-html{
-  scroll-behavior:smooth
-}
-
-body{
-  margin:0;
-  background:var(--bg);
-  color:var(--text);
-  font-family:Inter,system-ui,Arial,sans-serif;
-  line-height:1.6
-}
-
-a{
-  color:inherit;
-  text-decoration:none
-}
-
-.wrap{
-  width:min(1100px,92%);
-  margin:auto
-}
-
-nav{
-  min-height:76px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  gap:20px
-}
-
-.logo{
-  font-weight:900;
-  letter-spacing:.04em
-}
-
-.nav{
-  display:flex;
-  gap:24px;
-  color:var(--muted);
-  font-size:.92rem
-}
-
-.nav a:hover{
-  color:#fff
-}
-
-.hero{
-  padding:95px 0 105px
-}
-
-.pill{
-  display:inline-block;
-  border:1px solid var(--line);
-  border-radius:999px;
-  padding:7px 13px;
-  color:#ccc;
-  font-size:.82rem
-}
-
-.hero h1{
-  font-size:clamp(3.2rem,8vw,7rem);
-  line-height:.9;
-  letter-spacing:-.07em;
-  margin:23px 0
-}
-
-.grad{
-  background:linear-gradient(100deg,var(--a),var(--b));
-  -webkit-background-clip:text;
-  color:transparent
-}
-
-.hero p,
-.intro{
-  color:var(--muted);
-  max-width:710px;
-  font-size:1.1rem
-}
-
-.actions{
-  display:flex;
-  gap:12px;
-  flex-wrap:wrap;
-  margin-top:28px
-}
-
-.btn{
-  display:inline-block;
-  padding:13px 19px;
-  border:1px solid var(--line);
-  border-radius:10px;
-  font-weight:750
-}
-
-.btn:hover{
-  border-color:#55556a
-}
-
-.primary{
-  background:#fff;
-  color:#111
-}
-
-section{
-  padding:78px 0
-}
-
-.eyebrow{
-  color:#b9a7ff;
-  text-transform:uppercase;
-  letter-spacing:.14em;
-  font-size:.75rem;
-  font-weight:800
-}
-
-.title{
-  font-size:2.4rem;
-  letter-spacing:-.04em;
-  margin:7px 0
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:18px;
-  margin-top:32px
-}
-
-.case{
-  background:var(--card);
-  border:1px solid var(--line);
-  border-radius:20px;
-  overflow:hidden;
-  transition:transform .2s,border-color .2s
-}
-
-.case:hover{
-  transform:translateY(-3px);
-  border-color:#4b4660
-}
-
-.visual{
-  height:215px;
-  padding:25px;
-  display:flex;
-  align-items:end;
-  background:linear-gradient(135deg,#21183a,#13131b)
-}
-
-.v2{
-  background:linear-gradient(135deg,#32192d,#15131a)
-}
-
-.v3{
-  background:linear-gradient(135deg,#182b35,#12151a)
-}
-
-.v4{
-  background:linear-gradient(135deg,#302b19,#151512)
-}
-
-.mini{
-  font-size:2.1rem;
-  font-weight:900;
-  letter-spacing:-.06em
-}
-
-.body{
-  padding:24px
-}
-
-.body h3{
-  margin:0 0 7px;
-  font-size:1.25rem
-}
-
-.body p,
-.service p{
-  color:var(--muted);
-  margin:0
-}
-
-.tags{
-  display:flex;
-  gap:7px;
-  flex-wrap:wrap;
-  margin-top:15px
-}
-
-.tag{
-  border:1px solid var(--line);
-  padding:5px 9px;
-  border-radius:999px;
-  color:#c5c5d0;
-  font-size:.74rem
-}
-
-.services{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:16px;
-  margin-top:30px
-}
-
-.service,
-.box{
-  background:var(--card);
-  border:1px solid var(--line);
-  border-radius:17px;
-  padding:25px
-}
-
-.num{
-  color:#b9a7ff;
-  font-weight:900
-}
-
-.about{
-  display:grid;
-  grid-template-columns:1.3fr .8fr;
-  gap:20px
-}
-
-.skills{
-  display:flex;
-  gap:8px;
-  flex-wrap:wrap;
-  margin-top:18px
-}
-
-.skill{
-  background:#171720;
-  border:1px solid var(--line);
-  border-radius:8px;
-  padding:7px 10px;
-  font-size:.82rem
-}
-
-.contact{
-  padding:42px;
-  border:1px solid var(--line);
-  border-radius:24px;
-  background:linear-gradient(135deg,#191328,#111117)
-}
-
-.contact h2{
-  font-size:2.5rem;
-  margin:5px 0
-}
-
-.contact p{
-  color:var(--muted);
-  max-width:650px
-}
-
-footer{
-  border-top:1px solid var(--line);
-  padding:28px 0;
-  color:var(--muted);
-  font-size:.88rem
-}
-
-@media(max-width:760px){
-
-  .nav{
-    display:none
-  }
-
-  .hero{
-    padding:65px 0
-  }
-
-  .hero h1{
-    font-size:3.4rem
-  }
-
-  .grid,
-  .services,
-  .about{
-    grid-template-columns:1fr
-  }
-
-  section{
-    padding:65px 0
-  }
-}
-</style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="wrap">
+  <!-- =========================
+       NAVIGATION
+  ========================== -->
+  <header class="site-header">
+    <nav class="navbar">
 
-<nav>
+      <a href="#home" class="logo">
+        Clinton Mokua
+      </a>
 
-<div class="logo">
-CLINTON TORA
-</div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
 
-<div class="nav">
-<a href="#work">Work</a>
-<a href="#services">Services</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-<a href="cv.html">CV</a>
-</div>
+    </nav>
+  </header>
 
-</nav>
 
-<header class="hero">
+  <main>
 
-<span class="pill">
-Brand Designer · Freelance Writer · Remote Creator
-</span>
+    <!-- =========================
+         HERO
+    ========================== -->
+    <section id="home" class="hero">
+
+      <div class="hero-content">
+
+        <p class="hero-label">
+          AI DATA &amp; RESEARCH SPECIALIST
+        </p>
+
+        <h1>
+          Clinton Mokua
+        </h1>
+
+        <h2>
+          AI Data, Research &amp; Evaluation Specialist
+        </h2>
+
+        <p>
+          Detail-oriented professional specializing in AI data annotation,
+          online research, AI response evaluation, content review,
+          data quality, and digital information analysis.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#resume" class="btn">
+            View Resume
+          </a>
+
+          <a href="#contact" class="btn secondary-btn">
+            Contact Me
+          </a>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         ABOUT
+    ========================== -->
+    <section id="about" class="section">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <p>ABOUT ME</p>
+          <h2>AI Data &amp; Research Specialist</h2>
+        </div>
+
+        <div class="about-content">
+
+          <p>
+            I am a detail-oriented AI Data &amp; Research Specialist with
+            experience working with digital information, structured data,
+            content evaluation, online research, annotation, and AI-generated
+            content.
+          </p>
+
+          <p>
+            My work involves reviewing information, identifying errors,
+            comparing content, following detailed project guidelines,
+            categorizing data, and producing accurate and consistent results.
+          </p>
+
+          <p>
+            I am comfortable working independently with online platforms and
+            AI-powered tools, learning new workflows quickly, and adapting to
+            different project requirements.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CORE SKILLS
+    ========================== -->
+    <section id="skills" class="section">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <p>EXPERTISE</p>
+          <h2>Core AI &amp; Data Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <h3>AI Data</h3>
+            <ul>
+              <li>AI Data Annotation</li>
+              <li>Data Labeling &amp; Classification</li>
+              <li>Text Classification</li>
+              <li>Data Categorization</li>
+              <li>Data Validation</li>
+              <li>Data Cleaning</li>
+              <li>Data Quality Control</li>
+              <li>Quality Assurance</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>AI Evaluation</h3>
+            <ul>
+              <li>AI Response Evaluation</li>
+              <li>Search Relevance Evaluation</li>
+              <li>Prompt Evaluation</li>
+              <li>Natural Language Evaluation</li>
+              <li>Human Preference Rating</li>
+              <li>Pairwise Response Comparison</li>
+              <li>AI Content Review</li>
+              <li>AI-Generated Content Review</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>Annotation</h3>
+            <ul>
+              <li>Text Annotation</li>
+              <li>Image Annotation</li>
+              <li>Video Annotation</li>
+              <li>Action Segmentation</li>
+              <li>Object &amp; Activity Identification</li>
+              <li>Caption Evaluation</li>
+              <li>Entity Identification</li>
+              <li>Content Categorization</li>
+            </ul>
+          </div>
+
+          <div class="skill-card">
+            <h3>Research</h3>
+            <ul>
+              <li>Online Research</li>
+              <li>Web Research</li>
+              <li>Source Verification</li>
+              <li>Fact Checking</li>
+              <li>Information Retrieval</li>
+              <li>Evidence Analysis</li>
+              <li>Information Comparison</li>
+              <li>Research Documentation</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         AI EVALUATION
+    ========================== -->
+    <section class="section alternate-section">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <p>AI EVALUATION</p>
+          <h2>Evaluation &amp; Quality Skills</h2>
+        </div>
+
+        <div class="tag-container">
+
+          <span>Rating AI-generated responses</span>
+          <span>Comparing AI responses</span>
+          <span>Factual error identification</span>
+          <span>Logical error identification</span>
+          <span>Relevance assessment</span>
+          <span>Instruction following</span>
+          <span>Clarity assessment</span>
+          <span>Completeness assessment</span>
+          <span>Evaluation rationales</span>
+          <span>Caption review</span>
+          <span>Guideline compliance</span>
+          <span>Consistent labeling</span>
+          <span>Ambiguous case handling</span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         RESEARCH & ANALYTICAL
+    ========================== -->
+    <section class="section">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <p>ANALYTICAL CAPABILITIES</p>
+          <h2>Research &amp; Analytical Skills</h2>
+        </div>
+
+        <div class="two-column-list">
+
+          <ul>
+            <li>Online information research</li>
+            <li>Source verification</li>
+            <li>Evidence analysis</li>
+            <li>Information comparison</li>
+            <li>Pattern identification</li>
+            <li>Problem solving</li>
+            <li>Critical thinking</li>
+          </ul>
+
+          <ul>
+            <li>Attention to detail</li>
+            <li>Following complex instructions</li>
+            <li>Identifying inconsistencies</li>
+            <li>Structured data review</li>
+            <li>Research documentation</li>
+            <li>Accuracy</li>
+            <li>Consistency</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         TECHNICAL SKILLS
+    ========================== -->
+    <section class="section alternate-section">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <p>TECHNICAL</p>
+          <h2>Technical Skills</h2>
+        </div>
+
+        <div class="tag-container">
+
+          <span>Microsoft Office</span>
+          <span>Microsoft Excel</span>
+          <span>Google Workspace</span>
+          <span>Google Sheets</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Java</span>
+          <span>SQL</span>
+          <span>Database Fundamentals</span>
+          <span>Computer Networking</span>
+          <span>Computer Security</span>
+          <span>Web Technologies</span>
+          <span>Git</span>
+          <span>GitHub</span>
+          <span>AI Productivity Tools</span>
+          <span>Software Troubleshooting</span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         DATA & INFORMATION
+    ========================== -->
+    <section class="section">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <p>DATA MANAGEMENT</p>
+          <h2>Data &amp; Information Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <h3>Data Handling</h3>
+
+            <ul>
+              <li>Data Entry</li>
+              <li>Data Verification</li>
+              <li>Data Organization</li>
+              <li>Data Cleaning</li>
+              <li>Structured Data Labeling</li>
+              <li>Spreadsheet Management</li>
+            </ul>
+
+          </div>
+
+          <div class="skill-card">
+            <h3>Quality &amp; Validation</h3>
+
+            <ul>
+              <li>Record Validation</li>
+              <li>Duplicate Identification</li>
+              <li>Information Extraction</li>
+              <li>Metadata Review</li>
+              <li>Quality Checking</li>
+              <li>Quality Assurance</li>
+            </ul>
+
+          </div>
+
+          <div class="skill-card">
+            <h3>Content Review</h3>
+
+            <ul>
+              <li>Content Moderation</li>
+              <li>Content Review</li>
+              <li>Transcription Review</li>
+              <li>Transcript Review</li>
+              <li>De-identification Awareness</li>
+              <li>PII Awareness</li>
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         EXPERIENCE
+    ========================== -->
+    <section id="experience" class="section alternate-section">
+
+      <div class="container">
+
+        <div class="section-heading">
+          <p>EXPERIENCE</p>
+          <h2>Professional Experience</h2>
+        </div>
+
+
+        <article class="experience-card">
+
+          <div class="experience-header">
+
+            <div>
+              <h3>AI Data &amp; Online Research Projects</h3>
+              <p>Remote / Freelance</p>
+            </div>
+
+          </div>
+
+          <ul>
+            <li>
+              Conducted online research and reviewed digital information
+              according to specific project requirements.
+            </li>
+
+            <li>
+              Classified and organized information into structured categories.
+            </li>
+
+            <li>
+              Evaluated content for accuracy, relevance, quality, and
+              guideline compliance.
+            </li>
+
+            <li>
+              Reviewed AI-generated responses and identified issues requiring
+              correction.
+            </li>
+
+            <li>
+              Compared alternative responses using predefined evaluation
+              criteria.
+            </li>
+
+            <li>
+              Performed text, image, video, and content-review tasks.
+            </li>
+
+            <li>
+              Maintained consistency and accuracy across assigned tasks.
+            </li>
+
+            <li>
+              Followed detailed project instructions and adapted to different
+              annotation workflows.
+            </li>
+
+            <li>
+              Documented findings and provided concise rationales for
+              evaluation decisions.
+            </li>
+          </ul>
+
+        </article>
+
+
+        <article class="experience-card">
+
+          <div class="experience-header">
+
+            <div>
+              <h3>Academic Research &amp; Technical Support</h3>
+              <p>Remote / Freelance</p>
+            </div>
 
-<h1>
-Creative work with
-<span class="grad">purpose.</span>
-</h1>
+          </div>
+
+          <ul>
+            <li>
+              Researched technical and academic topics using online sources.
+            </li>
 
-<p>
-I turn ideas into clear visual identities and engaging digital content,
-combining design, writing and reliable remote creative support.
-</p>
+            <li>
+              Organized information and prepared clear technical documentation.
+            </li>
 
-<div class="actions">
+            <li>
+              Reviewed written material for accuracy, structure, and
+              consistency.
+            </li>
 
-<a class="btn primary" href="#work">
-Explore my work
-</a>
+            <li>
+              Assisted with research-related tasks and information analysis.
+            </li>
 
-<a class="btn" href="cv.html">
-View My CV
-</a>
+            <li>
+              Applied analytical and technical skills to research and problem
+              solving.
+            </li>
+          </ul>
 
-<a class="btn" href="https://github.com/youngmalcolm3484-glitch" target="_blank">
-GitHub
-</a>
+        </article>
 
-</div>
+      </div>
 
-</header>
+    </section>
 
-<section id="work">
 
-<span class="eyebrow">
-Portfolio concepts
-</span>
+    <!-- =========================
+         PROFESSIONAL SKILLS
+    ========================== -->
+    <section class="section">
 
-<h2 class="title">
-Selected projects
-</h2>
+      <div class="container">
 
-<p class="intro">
-Concept projects created to demonstrate my creative approach.
-They are labeled as concepts rather than claimed client work.
-</p>
+        <div class="section-heading">
+          <p>PROFESSIONAL</p>
+          <h2>Professional Skills</h2>
+        </div>
 
-<div class="grid">
+        <div class="tag-container">
 
-<article class="case">
+          <span>Attention to Detail</span>
+          <span>Reliable Independent Work</span>
+          <span>Time Management</span>
+          <span>Fast Learning</span>
+          <span>Written Communication</span>
+          <span>Analytical Thinking</span>
+          <span>Problem Solving</span>
+          <span>Adaptability</span>
+          <span>Standardized Procedures</span>
+          <span>Meeting Deadlines</span>
+          <span>Consistency</span>
+          <span>Remote Collaboration</span>
 
-<div class="visual">
+        </div>
 
-<div>
+      </div>
 
-<span class="eyebrow">
-01 · BRANDING
-</span>
+    </section>
 
-<div class="mini">
-NOVA / COFFEE
-</div>
 
-</div>
+    <!-- =========================
+         TOOLS
+    ========================== -->
+    <section class="section alternate-section">
 
-</div>
+      <div class="container">
 
-<div class="body">
+        <div class="section-heading">
+          <p>TOOLS</p>
+          <h2>Tools &amp; Platforms</h2>
+        </div>
 
-<h3>
-Nova Coffee Identity
-</h3>
+        <div class="tools-grid">
 
-<p>
-Modern coffee-brand concept using a bold wordmark,
-simple geometry and a flexible social-media system.
-</p>
+          <div>Google Workspace</div>
+          <div>Microsoft Office</div>
+          <div>Microsoft Excel</div>
+          <div>Google Sheets</div>
+          <div>GitHub</div>
+          <div>AI-Assisted Research Tools</div>
+          <div>Online Annotation Platforms</div>
+          <div>Web Research Tools</div>
+          <div>Data-Review Platforms</div>
 
-<div class="tags">
-<span class="tag">Logo</span>
-<span class="tag">Brand Identity</span>
-<span class="tag">Social</span>
-</div>
+        </div>
 
-</div>
+      </div>
 
-</article>
+    </section>
 
 
-<article class="case">
+    <!-- =========================
+         RESUME
+    ========================== -->
+    <section id="resume" class="section">
 
-<div class="visual v2">
+      <div class="container">
 
-<div>
+        <div class="section-heading">
+          <p>RESUME</p>
+          <h2>AI Data &amp; Research Specialist</h2>
+        </div>
 
-<span class="eyebrow">
-02 · SOCIAL
-</span>
+        <div class="resume-card">
 
-<div class="mini">
-MOVE / DAILY
-</div>
+          <h3>Clinton Mokua</h3>
 
-</div>
+          <p class="resume-title">
+            AI Data &amp; Research Specialist
+          </p>
 
-</div>
+          <p>
+            AI data annotation • AI response evaluation • Online research •
+            Data quality • Content review • Data analysis
+          </p>
 
-<div class="body">
+          <a href="resume.pdf" class="btn" download>
+            Download Resume PDF
+          </a>
 
-<h3>
-Move Daily Campaign
-</h3>
+        </div>
 
-<p>
-Social campaign concept combining repeatable layouts,
-short-form copy and consistent typography.
-</p>
+      </div>
 
-<div class="tags">
-<span class="tag">Campaign</span>
-<span class="tag">Content</span>
-<span class="tag">Art Direction</span>
-</div>
+    </section>
 
-</div>
 
-</article>
+    <!-- =========================
+         TARGET ROLES
+    ========================== -->
+    <section class="section alternate-section">
 
+      <div class="container">
 
-<article class="case">
+        <div class="section-heading">
+          <p>CAREER FOCUS</p>
+          <h2>Target Roles</h2>
+        </div>
 
-<div class="visual v3">
+        <div class="tag-container">
 
-<div>
+          <span>AI Data Annotator</span>
+          <span>AI Trainer</span>
+          <span>AI Response Evaluator</span>
+          <span>Search Quality Rater</span>
+          <span>Data Quality Specialist</span>
+          <span>AI Content Reviewer</span>
+          <span>Data Labeler</span>
+          <span>Online Researcher</span>
+          <span>AI Generalist</span>
+          <span>Content Evaluator</span>
+          <span>AI Evaluation Specialist</span>
+          <span>Transcription Reviewer</span>
 
-<span class="eyebrow">
-03 · CONTENT
-</span>
+        </div>
 
-<div class="mini">
-TECH / SIMPLE
-</div>
+      </div>
 
-</div>
+    </section>
 
-</div>
 
-<div class="body">
+    <!-- =========================
+         CONTACT
+    ========================== -->
+    <section id="contact" class="section contact-section">
 
-<h3>
-Tech Explained Series
-</h3>
+      <div class="container">
 
-<p>
-Writing concept focused on turning technical subjects
-into concise, readable articles for general audiences.
-</p>
+        <div class="section-heading">
+          <p>CONTACT</p>
+          <h2>Let's Work Together</h2>
+        </div>
 
-<div class="tags">
-<span class="tag">Research</span>
-<span class="tag">Writing</span>
-<span class="tag">Editing</span>
-</div>
+        <div class="contact-card">
 
-</div>
+          <p>
+            Interested in AI data, research, annotation, evaluation,
+            content review, or remote digital projects?
+          </p>
 
-</article>
+          <a
+            href="mailto:youngmalcolm3484@gmail.com"
+            class="contact-email"
+          >
+            youngmalcolm3484@gmail.com
+          </a>
 
+          <div class="contact-buttons">
 
-<article class="case">
+            <a
+              href="mailto:youngmalcolm3484@gmail.com"
+              class="btn"
+            >
+              Email Me
+            </a>
 
-<div class="visual v4">
+            <a
+              href="https://github.com/youngmalcolm3484-glitch"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn secondary-btn"
+            >
+              GitHub
+            </a>
 
-<div>
+          </div>
 
-<span class="eyebrow">
-04 · CREATOR
-</span>
+        </div>
 
-<div class="mini">
-CREATOR KIT
-</div>
+      </div>
 
-</div>
+    </section>
 
-</div>
+  </main>
 
-<div class="body">
 
-<h3>
-Creator Launch Kit
-</h3>
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="site-footer">
 
-<p>
-Remote-creator concept combining profile graphics,
-content prompts, captions and a simple publishing workflow.
-</p>
+    <p>
+      &copy; 2026 Clinton Mokua. All rights reserved.
+    </p>
 
-<div class="tags">
-<span class="tag">Strategy</span>
-<span class="tag">Copy</span>
-<span class="tag">Design</span>
-</div>
+    <p>
+      AI Data &amp; Research Specialist
+    </p>
 
-</div>
+  </footer>
 
-</article>
 
-</div>
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+      link.addEventListener("click", function(event) {
+        const target = document.querySelector(this.getAttribute("href"));
 
-</section>
+        if (target) {
+          event.preventDefault();
 
-
-<section id="services">
-
-<span class="eyebrow">
-Services
-</span>
-
-<h2 class="title">
-How I can help
-</h2>
-
-<div class="services">
-
-<div class="service">
-
-<div class="num">01</div>
-
-<h3>
-Brand Design
-</h3>
-
-<p>
-Logos, visual identity, social graphics, banners
-and branded digital assets.
-</p>
-
-</div>
-
-
-<div class="service">
-
-<div class="num">02</div>
-
-<h3>
-Writing & Copy
-</h3>
-
-<p>
-Articles, captions, website copy, descriptions
-and polished digital content.
-</p>
-
-</div>
-
-
-<div class="service">
-
-<div class="num">03</div>
-
-<h3>
-Remote Creation
-</h3>
-
-<p>
-Research, content production, creative support
-and deadline-focused delivery.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section id="about">
-
-<div class="about">
-
-<div>
-
-<span class="eyebrow">
-About
-</span>
-
-<h2 class="title">
-Design meets words.
-</h2>
-
-<p class="intro">
-I enjoy making ideas easier to understand and easier to remember.
-My workflow combines visual thinking with clear writing,
-research and attention to detail.
-</p>
-
-</div>
-
-
-<div class="box">
-
-<b>
-Skills & tools
-</b>
-
-<div class="skills">
-
-<span class="skill">Brand Identity</span>
-<span class="skill">Graphic Design</span>
-<span class="skill">Writing</span>
-<span class="skill">Copywriting</span>
-<span class="skill">Research</span>
-<span class="skill">Editing</span>
-<span class="skill">Canva</span>
-<span class="skill">Photoshop</span>
-<span class="skill">Figma</span>
-<span class="skill">Google Workspace</span>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<section id="contact">
-
-<div class="contact">
-
-<span class="eyebrow">
-Get in touch
-</span>
-
-<h2>
-Let's work together.
-</h2>
-
-<p>
-For freelance brand design, writing or remote creator opportunities,
-you can reach me through GitHub or view my CV for applications.
-</p>
-
-<div class="actions">
-
-<a class="btn primary"
-href="https://github.com/youngmalcolm3484-glitch"
-target="_blank">
-Contact via GitHub
-</a>
-
-<a class="btn" href="cv.html">
-View My CV
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-
-<footer>
-© 2026 Clinton Tora · Brand Designer · Freelance Writer · Remote Creator
-</footer>
-
-</div>
+          target.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+        }
+      });
+    });
+  </script>
 
 </body>
-  </html>
+                </html>
