@@ -1,28 +1,706 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
 <title>Clinton Tora | Brand Designer & Remote Creator</title>
+
 <meta name="description" content="Clinton Tora portfolio: brand design, freelance writing and remote creator work.">
+
 <style>
-:root{--bg:#08080c;--card:#12121a;--text:#f7f7fb;--muted:#a8a8b8;--line:#292936;--a:#8b5cf6;--b:#ec4899}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Arial,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1100px,92%);margin:auto}
-nav{height:76px;display:flex;justify-content:space-between;align-items:center}.logo{font-weight:900;letter-spacing:.04em}.nav{display:flex;gap:24px;color:var(--muted);font-size:.92rem}.nav a:hover{color:#fff}
-.hero{padding:95px 0 105px}.pill{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:7px 13px;color:#ccc;font-size:.82rem}.hero h1{font-size:clamp(3.2rem,8vw,7rem);line-height:.9;letter-spacing:-.07em;margin:23px 0}.grad{background:linear-gradient(100deg,var(--a),var(--b));-webkit-background-clip:text;color:transparent}.hero p,.intro{color:var(--muted);max-width:710px;font-size:1.1rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:13px 19px;border:1px solid var(--line);border-radius:10px;font-weight:750}.primary{background:#fff;color:#111}
-section{padding:78px 0}.eyebrow{color:#b9a7ff;text-transform:uppercase;letter-spacing:.14em;font-size:.75rem;font-weight:800}.title{font-size:2.4rem;letter-spacing:-.04em;margin:7px 0}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:32px}.case{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;transition:transform .2s,border-color .2s}.case:hover{transform:translateY(-3px);border-color:#4b4660}.visual{height:215px;padding:25px;display:flex;align-items:end;background:linear-gradient(135deg,#21183a,#13131b)}.v2{background:linear-gradient(135deg,#32192d,#15131a)}.v3{background:linear-gradient(135deg,#182b35,#12151a)}.v4{background:linear-gradient(135deg,#302b19,#151512)}.mini{font-size:2.1rem;font-weight:900;letter-spacing:-.06em}.body{padding:24px}.body h3{margin:0 0 7px;font-size:1.25rem}.body p,.service p{color:var(--muted);margin:0}.tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:15px}.tag{border:1px solid var(--line);padding:5px 9px;border-radius:999px;color:#c5c5d0;font-size:.74rem}
-.services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:30px}.service,.box{background:var(--card);border:1px solid var(--line);border-radius:17px;padding:25px}.num{color:#b9a7ff;font-weight:900}.about{display:grid;grid-template-columns:1.3fr .8fr;gap:20px}.skills{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}.skill{background:#171720;border:1px solid var(--line);border-radius:8px;padding:7px 10px;font-size:.82rem}
-.contact{padding:42px;border:1px solid var(--line);border-radius:24px;background:linear-gradient(135deg,#191328,#111117)}.contact h2{font-size:2.5rem;margin:5px 0}.contact p{color:var(--muted);max-width:650px}footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.88rem}
-@media(max-width:760px){.nav{display:none}.hero{padding:65px 0}.hero h1{font-size:3.4rem}.grid,.services,.about{grid-template-columns:1fr}section{padding:65px 0}}
-</style></head><body><div class="wrap">
-<nav><div class="logo">CLINTON TORA</div><div class="nav"><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a></div></nav>
-<header class="hero"><span class="pill">Brand Designer · Freelance Writer · Remote Creator</span><h1>Creative work with <span class="grad">purpose.</span></h1><p>I turn ideas into clear visual identities and engaging digital content, combining design, writing and reliable remote creative support.</p><div class="actions"><a class="btn primary" href="#work">Explore my work</a><a class="btn" href="Clinton_Tora_CV.pdf" download>Download CV</a><a class="btn" href="https://github.com/youngmalcolm3484-glitch" target="_blank">GitHub</a></div></header>
-<section id="work"><span class="eyebrow">Portfolio concepts</span><h2 class="title">Selected projects</h2><p class="intro">Concept projects created to demonstrate my creative approach. They are labeled as concepts rather than claimed client work.</p>
+:root{
+  --bg:#08080c;
+  --card:#12121a;
+  --text:#f7f7fb;
+  --muted:#a8a8b8;
+  --line:#292936;
+  --a:#8b5cf6;
+  --b:#ec4899
+}
+
+*{box-sizing:border-box}
+
+html{
+  scroll-behavior:smooth
+}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:Inter,system-ui,Arial,sans-serif;
+  line-height:1.6
+}
+
+a{
+  color:inherit;
+  text-decoration:none
+}
+
+.wrap{
+  width:min(1100px,92%);
+  margin:auto
+}
+
+nav{
+  min-height:76px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px
+}
+
+.logo{
+  font-weight:900;
+  letter-spacing:.04em
+}
+
+.nav{
+  display:flex;
+  gap:24px;
+  color:var(--muted);
+  font-size:.92rem
+}
+
+.nav a:hover{
+  color:#fff
+}
+
+.hero{
+  padding:95px 0 105px
+}
+
+.pill{
+  display:inline-block;
+  border:1px solid var(--line);
+  border-radius:999px;
+  padding:7px 13px;
+  color:#ccc;
+  font-size:.82rem
+}
+
+.hero h1{
+  font-size:clamp(3.2rem,8vw,7rem);
+  line-height:.9;
+  letter-spacing:-.07em;
+  margin:23px 0
+}
+
+.grad{
+  background:linear-gradient(100deg,var(--a),var(--b));
+  -webkit-background-clip:text;
+  color:transparent
+}
+
+.hero p,
+.intro{
+  color:var(--muted);
+  max-width:710px;
+  font-size:1.1rem
+}
+
+.actions{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:28px
+}
+
+.btn{
+  display:inline-block;
+  padding:13px 19px;
+  border:1px solid var(--line);
+  border-radius:10px;
+  font-weight:750
+}
+
+.btn:hover{
+  border-color:#55556a
+}
+
+.primary{
+  background:#fff;
+  color:#111
+}
+
+section{
+  padding:78px 0
+}
+
+.eyebrow{
+  color:#b9a7ff;
+  text-transform:uppercase;
+  letter-spacing:.14em;
+  font-size:.75rem;
+  font-weight:800
+}
+
+.title{
+  font-size:2.4rem;
+  letter-spacing:-.04em;
+  margin:7px 0
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px;
+  margin-top:32px
+}
+
+.case{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:20px;
+  overflow:hidden;
+  transition:transform .2s,border-color .2s
+}
+
+.case:hover{
+  transform:translateY(-3px);
+  border-color:#4b4660
+}
+
+.visual{
+  height:215px;
+  padding:25px;
+  display:flex;
+  align-items:end;
+  background:linear-gradient(135deg,#21183a,#13131b)
+}
+
+.v2{
+  background:linear-gradient(135deg,#32192d,#15131a)
+}
+
+.v3{
+  background:linear-gradient(135deg,#182b35,#12151a)
+}
+
+.v4{
+  background:linear-gradient(135deg,#302b19,#151512)
+}
+
+.mini{
+  font-size:2.1rem;
+  font-weight:900;
+  letter-spacing:-.06em
+}
+
+.body{
+  padding:24px
+}
+
+.body h3{
+  margin:0 0 7px;
+  font-size:1.25rem
+}
+
+.body p,
+.service p{
+  color:var(--muted);
+  margin:0
+}
+
+.tags{
+  display:flex;
+  gap:7px;
+  flex-wrap:wrap;
+  margin-top:15px
+}
+
+.tag{
+  border:1px solid var(--line);
+  padding:5px 9px;
+  border-radius:999px;
+  color:#c5c5d0;
+  font-size:.74rem
+}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+  margin-top:30px
+}
+
+.service,
+.box{
+  background:var(--card);
+  border:1px solid var(--line);
+  border-radius:17px;
+  padding:25px
+}
+
+.num{
+  color:#b9a7ff;
+  font-weight:900
+}
+
+.about{
+  display:grid;
+  grid-template-columns:1.3fr .8fr;
+  gap:20px
+}
+
+.skills{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-top:18px
+}
+
+.skill{
+  background:#171720;
+  border:1px solid var(--line);
+  border-radius:8px;
+  padding:7px 10px;
+  font-size:.82rem
+}
+
+.contact{
+  padding:42px;
+  border:1px solid var(--line);
+  border-radius:24px;
+  background:linear-gradient(135deg,#191328,#111117)
+}
+
+.contact h2{
+  font-size:2.5rem;
+  margin:5px 0
+}
+
+.contact p{
+  color:var(--muted);
+  max-width:650px
+}
+
+footer{
+  border-top:1px solid var(--line);
+  padding:28px 0;
+  color:var(--muted);
+  font-size:.88rem
+}
+
+@media(max-width:760px){
+
+  .nav{
+    display:none
+  }
+
+  .hero{
+    padding:65px 0
+  }
+
+  .hero h1{
+    font-size:3.4rem
+  }
+
+  .grid,
+  .services,
+  .about{
+    grid-template-columns:1fr
+  }
+
+  section{
+    padding:65px 0
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrap">
+
+<nav>
+
+<div class="logo">
+CLINTON TORA
+</div>
+
+<div class="nav">
+<a href="#work">Work</a>
+<a href="#services">Services</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+<a href="cv.html">CV</a>
+</div>
+
+</nav>
+
+<header class="hero">
+
+<span class="pill">
+Brand Designer · Freelance Writer · Remote Creator
+</span>
+
+<h1>
+Creative work with
+<span class="grad">purpose.</span>
+</h1>
+
+<p>
+I turn ideas into clear visual identities and engaging digital content,
+combining design, writing and reliable remote creative support.
+</p>
+
+<div class="actions">
+
+<a class="btn primary" href="#work">
+Explore my work
+</a>
+
+<a class="btn" href="cv.html">
+View My CV
+</a>
+
+<a class="btn" href="https://github.com/youngmalcolm3484-glitch" target="_blank">
+GitHub
+</a>
+
+</div>
+
+</header>
+
+<section id="work">
+
+<span class="eyebrow">
+Portfolio concepts
+</span>
+
+<h2 class="title">
+Selected projects
+</h2>
+
+<p class="intro">
+Concept projects created to demonstrate my creative approach.
+They are labeled as concepts rather than claimed client work.
+</p>
+
 <div class="grid">
-<article class="case"><div class="visual"><div><span class="eyebrow">01 · BRANDING</span><div class="mini">NOVA / COFFEE</div></div></div><div class="body"><h3>Nova Coffee Identity</h3><p>Modern coffee-brand concept using a bold wordmark, simple geometry and a flexible social-media system.</p><div class="tags"><span class="tag">Logo</span><span class="tag">Brand Identity</span><span class="tag">Social</span></div></div></article>
-<article class="case"><div class="visual v2"><div><span class="eyebrow">02 · SOCIAL</span><div class="mini">MOVE / DAILY</div></div></div><div class="body"><h3>Move Daily Campaign</h3><p>Social campaign concept combining repeatable layouts, short-form copy and consistent typography.</p><div class="tags"><span class="tag">Campaign</span><span class="tag">Content</span><span class="tag">Art Direction</span></div></div></article>
-<article class="case"><div class="visual v3"><div><span class="eyebrow">03 · CONTENT</span><div class="mini">TECH / SIMPLE</div></div></div><div class="body"><h3>Tech Explained Series</h3><p>Writing concept focused on turning technical subjects into concise, readable articles for general audiences.</p><div class="tags"><span class="tag">Research</span><span class="tag">Writing</span><span class="tag">Editing</span></div></div></article>
-<article class="case"><div class="visual v4"><div><span class="eyebrow">04 · CREATOR</span><div class="mini">CREATOR KIT</div></div></div><div class="body"><h3>Creator Launch Kit</h3><p>Remote-creator concept combining profile graphics, content prompts, captions and a simple publishing workflow.</p><div class="tags"><span class="tag">Strategy</span><span class="tag">Copy</span><span class="tag">Design</span></div></div></article>
-</div></section>
-<section id="services"><span class="eyebrow">Services</span><h2 class="title">How I can help</h2><div class="services"><div class="service"><div class="num">01</div><h3>Brand Design</h3><p>Logos, visual identity, social graphics, banners and branded digital assets.</p></div><div class="service"><div class="num">02</div><h3>Writing & Copy</h3><p>Articles, captions, website copy, descriptions and polished digital content.</p></div><div class="service"><div class="num">03</div><h3>Remote Creation</h3><p>Research, content production, creative support and deadline-focused delivery.</p></div></div></section>
-<section id="about"><div class="about"><div><span class="eyebrow">About</span><h2 class="title">Design meets words.</h2><p class="intro">I enjoy making ideas easier to understand and easier to remember. My workflow combines visual thinking with clear writing, research and attention to detail.</p></div><div class="box"><b>Skills & tools</b><div class="skills"><span class="skill">Brand Identity</span><span class="skill">Graphic Design</span><span class="skill">Writing</span><span class="skill">Copywriting</span><span class="skill">Research</span><span class="skill">Editing</span><span class="skill">Canva</span><span class="skill">Photoshop</span><span class="skill">Figma</span><span class="skill">Google Workspace</span></div></div></div></section>
-<section id="contact"><div class="contact"><span class="eyebrow">Get in touch</span><h2>Let's work together.</h2><p>For freelance brand design, writing or remote creator opportunities, you can reach me through GitHub or download my CV for applications.</p><div class="actions"><a class="btn primary" href="https://github.com/youngmalcolm3484-glitch" target="_blank">Contact via GitHub</a><a class="btn" href="Clinton_Tora_CV.pdf" download>Download CV</a></div></div></section>
-<footer>© 2026 Clinton Tora · Brand Designer · Freelance Writer · Remote Creator</footer>
-</div></body></html>
+
+<article class="case">
+
+<div class="visual">
+
+<div>
+
+<span class="eyebrow">
+01 · BRANDING
+</span>
+
+<div class="mini">
+NOVA / COFFEE
+</div>
+
+</div>
+
+</div>
+
+<div class="body">
+
+<h3>
+Nova Coffee Identity
+</h3>
+
+<p>
+Modern coffee-brand concept using a bold wordmark,
+simple geometry and a flexible social-media system.
+</p>
+
+<div class="tags">
+<span class="tag">Logo</span>
+<span class="tag">Brand Identity</span>
+<span class="tag">Social</span>
+</div>
+
+</div>
+
+</article>
+
+
+<article class="case">
+
+<div class="visual v2">
+
+<div>
+
+<span class="eyebrow">
+02 · SOCIAL
+</span>
+
+<div class="mini">
+MOVE / DAILY
+</div>
+
+</div>
+
+</div>
+
+<div class="body">
+
+<h3>
+Move Daily Campaign
+</h3>
+
+<p>
+Social campaign concept combining repeatable layouts,
+short-form copy and consistent typography.
+</p>
+
+<div class="tags">
+<span class="tag">Campaign</span>
+<span class="tag">Content</span>
+<span class="tag">Art Direction</span>
+</div>
+
+</div>
+
+</article>
+
+
+<article class="case">
+
+<div class="visual v3">
+
+<div>
+
+<span class="eyebrow">
+03 · CONTENT
+</span>
+
+<div class="mini">
+TECH / SIMPLE
+</div>
+
+</div>
+
+</div>
+
+<div class="body">
+
+<h3>
+Tech Explained Series
+</h3>
+
+<p>
+Writing concept focused on turning technical subjects
+into concise, readable articles for general audiences.
+</p>
+
+<div class="tags">
+<span class="tag">Research</span>
+<span class="tag">Writing</span>
+<span class="tag">Editing</span>
+</div>
+
+</div>
+
+</article>
+
+
+<article class="case">
+
+<div class="visual v4">
+
+<div>
+
+<span class="eyebrow">
+04 · CREATOR
+</span>
+
+<div class="mini">
+CREATOR KIT
+</div>
+
+</div>
+
+</div>
+
+<div class="body">
+
+<h3>
+Creator Launch Kit
+</h3>
+
+<p>
+Remote-creator concept combining profile graphics,
+content prompts, captions and a simple publishing workflow.
+</p>
+
+<div class="tags">
+<span class="tag">Strategy</span>
+<span class="tag">Copy</span>
+<span class="tag">Design</span>
+</div>
+
+</div>
+
+</article>
+
+</div>
+
+</section>
+
+
+<section id="services">
+
+<span class="eyebrow">
+Services
+</span>
+
+<h2 class="title">
+How I can help
+</h2>
+
+<div class="services">
+
+<div class="service">
+
+<div class="num">01</div>
+
+<h3>
+Brand Design
+</h3>
+
+<p>
+Logos, visual identity, social graphics, banners
+and branded digital assets.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="num">02</div>
+
+<h3>
+Writing & Copy
+</h3>
+
+<p>
+Articles, captions, website copy, descriptions
+and polished digital content.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<div class="num">03</div>
+
+<h3>
+Remote Creation
+</h3>
+
+<p>
+Research, content production, creative support
+and deadline-focused delivery.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="about">
+
+<div class="about">
+
+<div>
+
+<span class="eyebrow">
+About
+</span>
+
+<h2 class="title">
+Design meets words.
+</h2>
+
+<p class="intro">
+I enjoy making ideas easier to understand and easier to remember.
+My workflow combines visual thinking with clear writing,
+research and attention to detail.
+</p>
+
+</div>
+
+
+<div class="box">
+
+<b>
+Skills & tools
+</b>
+
+<div class="skills">
+
+<span class="skill">Brand Identity</span>
+<span class="skill">Graphic Design</span>
+<span class="skill">Writing</span>
+<span class="skill">Copywriting</span>
+<span class="skill">Research</span>
+<span class="skill">Editing</span>
+<span class="skill">Canva</span>
+<span class="skill">Photoshop</span>
+<span class="skill">Figma</span>
+<span class="skill">Google Workspace</span>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section id="contact">
+
+<div class="contact">
+
+<span class="eyebrow">
+Get in touch
+</span>
+
+<h2>
+Let's work together.
+</h2>
+
+<p>
+For freelance brand design, writing or remote creator opportunities,
+you can reach me through GitHub or view my CV for applications.
+</p>
+
+<div class="actions">
+
+<a class="btn primary"
+href="https://github.com/youngmalcolm3484-glitch"
+target="_blank">
+Contact via GitHub
+</a>
+
+<a class="btn" href="cv.html">
+View My CV
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+© 2026 Clinton Tora · Brand Designer · Freelance Writer · Remote Creator
+</footer>
+
+</div>
+
+</body>
+  </html>
