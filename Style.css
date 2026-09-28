@@ -1,0 +1,597 @@
+/* =========================================
+   CLINTON MOKUA PORTFOLIO
+   AI DATA & RESEARCH SPECIALIST
+========================================= */
+
+/* ---------- RESET ---------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background: #0b1020;
+  color: #e8ecf4;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+/* ---------- GLOBAL ---------- */
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.section {
+  padding: 90px 0;
+}
+
+.alternate-section {
+  background: #10172a;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-heading p {
+  font-size: 13px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  opacity: 0.65;
+  margin-bottom: 8px;
+}
+
+.section-heading h2 {
+  font-size: clamp(28px, 5vw, 42px);
+  line-height: 1.2;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(11, 16, 32, 0.94);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar {
+  width: min(1150px, 94%);
+  margin: 0 auto;
+  min-height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.8;
+  transition: 0.25s ease;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: 100px 20px;
+
+  background:
+    radial-gradient(circle at 50% 20%, rgba(75, 100, 255, 0.18), transparent 35%),
+    #0b1020;
+}
+
+.hero-content {
+  width: min(850px, 100%);
+}
+
+.hero-label {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-size: 13px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  opacity: 0.65;
+}
+
+.hero h1 {
+  font-size: clamp(45px, 9vw, 82px);
+  line-height: 1;
+  margin-bottom: 18px;
+}
+
+.hero h2 {
+  font-size: clamp(20px, 4vw, 30px);
+  font-weight: 500;
+  margin-bottom: 25px;
+  opacity: 0.9;
+}
+
+.hero p {
+  max-width: 720px;
+  margin: 0 auto 35px;
+  font-size: 17px;
+  opacity: 0.78;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+
+/* ---------- BUTTONS ---------- */
+
+.btn {
+  display: inline-block;
+
+  padding: 13px 24px;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+
+  background: #ffffff;
+  color: #0b1020;
+
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.92;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.secondary-btn {
+  background: transparent;
+  color: #e8ecf4;
+}
+
+
+/* ---------- ABOUT ---------- */
+
+.about-content {
+  max-width: 850px;
+  margin: auto;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+  font-size: 17px;
+  opacity: 0.82;
+}
+
+
+/* ---------- SKILLS GRID ---------- */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.skill-card {
+  padding: 28px;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 14px;
+
+  transition: 0.25s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.skill-card h3 {
+  font-size: 20px;
+  margin-bottom: 18px;
+}
+
+.skill-card ul {
+  list-style: none;
+}
+
+.skill-card li {
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 9px;
+  opacity: 0.78;
+  font-size: 15px;
+}
+
+.skill-card li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+}
+
+
+/* ---------- TAGS ---------- */
+
+.tag-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 11px;
+}
+
+.tag-container span {
+  padding: 9px 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 30px;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  font-size: 14px;
+  opacity: 0.85;
+
+  transition: 0.2s ease;
+}
+
+.tag-container span:hover {
+  transform: translateY(-2px);
+  opacity: 1;
+}
+
+
+/* ---------- TWO COLUMN LIST ---------- */
+
+.two-column-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 850px;
+  margin: auto;
+}
+
+.two-column-list ul {
+  list-style: none;
+}
+
+.two-column-list li {
+  padding: 10px 0 10px 22px;
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  opacity: 0.82;
+}
+
+.two-column-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+}
+
+
+/* ---------- EXPERIENCE ---------- */
+
+.experience-card {
+  max-width: 900px;
+  margin: 0 auto 30px;
+
+  padding: 32px;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 14px;
+}
+
+.experience-header {
+  margin-bottom: 20px;
+}
+
+.experience-card h3 {
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.experience-card p {
+  opacity: 0.6;
+}
+
+.experience-card ul {
+  padding-left: 20px;
+}
+
+.experience-card li {
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+
+/* ---------- TOOLS ---------- */
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.tools-grid div {
+  padding: 20px;
+  text-align: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  font-weight: 600;
+  opacity: 0.85;
+}
+
+
+/* ---------- RESUME ---------- */
+
+.resume-card {
+  max-width: 750px;
+  margin: auto;
+
+  padding: 45px 30px;
+
+  text-align: center;
+
+  background:
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.06), transparent 55%),
+    rgba(255, 255, 255, 0.035);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+}
+
+.resume-card h3 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.resume-title {
+  font-size: 18px;
+  opacity: 0.7;
+  margin-bottom: 15px;
+}
+
+.resume-card > p:not(.resume-title) {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  opacity: 0.65;
+}
+
+
+/* ---------- CONTACT ---------- */
+
+.contact-section {
+  text-align: center;
+}
+
+.contact-card {
+  max-width: 700px;
+  margin: auto;
+}
+
+.contact-card > p {
+  font-size: 17px;
+  opacity: 0.75;
+  margin-bottom: 18px;
+}
+
+.contact-email {
+  display: inline-block;
+
+  font-size: clamp(18px, 4vw, 25px);
+  font-weight: 700;
+
+  text-decoration: none;
+
+  margin-bottom: 30px;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+.site-footer {
+  padding: 30px 20px;
+
+  text-align: center;
+
+  background: #070b16;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.site-footer p {
+  font-size: 13px;
+  opacity: 0.55;
+  margin: 4px 0;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    min-height: auto;
+    padding: 18px 0;
+
+    flex-direction: column;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    gap: 13px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .hero {
+    min-height: 80vh;
+    padding: 80px 20px;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .section {
+    padding: 65px 0;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .two-column-list {
+    grid-template-columns: 1fr;
+  }
+
+  .tools-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .experience-card {
+    padding: 24px;
+  }
+
+}
+
+
+/* ---------- SMALL PHONES ---------- */
+
+@media (max-width: 480px) {
+
+  .container {
+    width: 90%;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero h2 {
+    font-size: 20px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+  }
+
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-card {
+    padding: 35px 20px;
+  }
+
+  .contact-email {
+    font-size: 17px;
+    word-break: break-word;
+  }
+
+}
+
+
+/* ---------- ACCESSIBILITY ---------- */
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
+}
+
+
+/* ---------- REDUCED MOTION ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+  }
+
+}
